@@ -1,0 +1,52 @@
+.follow-wrapper {
+  margin-left: 93px;
+}
+
+.follow-us {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  position: relative;
+}
+
+.follow-head {
+  font-family: var(--main-font);
+  @include font(14px, 700);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.follow-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+
+  &:not(:placeholder-shown) {
+    color: #ffffff;
+  }
+}
+.follow-btn {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--main-font);
+   @include font(16px, 700, 1.87, 0.06em);
+   text-align: center;
+   color: #ffffff;
+  border: none;
+  transform: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.follow-btn-icon {
+  vertical-align: middle;
+  align-items: center;
+  color: #ffffff;
+}

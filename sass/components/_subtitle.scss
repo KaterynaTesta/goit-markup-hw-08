@@ -1,0 +1,7 @@
+.subtitle {
+  margin-bottom: 50px;
+  font-family: var(--main-font);
+  @include font(36px, 700, 1.6);
+  text-align: center;
+  color: var(--title-color);
+}

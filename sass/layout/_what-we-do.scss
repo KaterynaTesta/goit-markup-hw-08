@@ -1,0 +1,32 @@
+.what-we-do {
+  padding-top: 47px;
+}
+.our-work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  margin-left: -30px;
+}
+.work-img {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.work-wrapper {
+  position: relative;
+}
+.work-subtitle {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--main-font);
+  @include font(14px, 700, 1.14);
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  transform: translateY(-100%);
+}
