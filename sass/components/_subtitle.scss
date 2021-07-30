@@ -1,7 +1,17 @@
 .subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: var(--main-font);
-  @include font(36px, 700, 1.6);
+  @include font(28px, 700, 1.17);
   text-align: center;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    margin-bottom: 50px;
+    font-family: var(--main-font);
+    @include font(36px, 700, 1.6);
+    text-align: center;
+    color: var(--title-color);
+  }
 }

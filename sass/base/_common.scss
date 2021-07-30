@@ -39,3 +39,8 @@ img {
     padding-top: 94px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .what-we-do {
+    display: none;
+  }
+}
