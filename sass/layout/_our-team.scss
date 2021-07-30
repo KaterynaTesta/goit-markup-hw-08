@@ -3,16 +3,19 @@
 }
 
 .our-team-list {
-  display: block;
   margin-top: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-desc {
-  margin-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-desc:not(:last-child) {
+  margin-bottom: 30px;
 }
 .subtitle-photo-name {
   margin-bottom: 10px;
@@ -23,6 +26,8 @@
 }
 
 .team-profile {
+  display: block;
+  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -53,7 +58,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.team-desc:not(:last-child) {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 1200px) {
   .our-team-list {
     display: flex;

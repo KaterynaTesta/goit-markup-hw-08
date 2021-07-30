@@ -1,12 +1,19 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .client-desc {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  flex-basis: calc((100% - 60px) / 2);
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -28,5 +35,24 @@
   .client-desc:hover &,
   .client-desc:focus & {
     fill: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .client-desc {
+    flex-basis: calc((100% - 90px) / 3);
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-desc {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1170px;
+    align-items: center;
+    // justify-content: space-between;
+    // width: calc((100% - 150px) / 6);
+  }
+  .client-link {
+    width: 170px;
   }
 }
