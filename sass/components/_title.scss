@@ -1,10 +1,23 @@
 .hero__title {
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: var(--main-font);
-  @include font(44px, 900, 1.36, 0.06em);
-  color: #ffffff;
-  text-transform: uppercase;
+  @include font(26px, 900, 1.61, 0.06em);
   text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 680px;
+    font-family: var(--main-font);
+    @include font(44px, 900, 1.36, 0.06em);
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }

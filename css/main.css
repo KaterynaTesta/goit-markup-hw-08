@@ -41,20 +41,44 @@ li {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 .container {
-  width: 1200px;
-  margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -124,19 +148,35 @@ img {
 }
 
 .hero__title {
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: var(--main-font);
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.61;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 680px;
+    font-family: var(--main-font);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -440,45 +480,89 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: #2f303a;
+  }
+}
 .overlay {
-  max-width: 1600px;
-  height: 600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero.jpg);
+  width: 480px;
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 480px 400px;
 }
 
+@media screen and (min-device-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/hero/bg-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 400px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/hero/bg-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desctop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px 600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/hero/bg-desctop@2x.jpg);
+  }
+}
 .thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
 }
 
-.advantages__list {
+.advantages {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -10px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.advantages__item {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 10px;
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .advantages_subtitle {
@@ -489,7 +573,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: var(--title-color);
 }
 
@@ -503,6 +587,55 @@ img {
   color: var(--text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 354px;
+  }
+
+  .advantages_subtitle {
+    text-align: left;
+  }
+
+  .advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .advantages__desc {
+    max-width: 300px;
+  }
+
+  .advantages__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .thumb {
+    width: 270px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .advantages__item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .what-we-do {
   padding-top: 47px;
 }
