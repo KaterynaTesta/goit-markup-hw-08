@@ -1,12 +1,17 @@
 .footer-container {
-  display: flex;
-  align-items: baseline;
-  margin-left: auto;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin-left: 0 auto;
 }
-
+.subscribe {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 .subscribe-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  // align-items: center;
 }
 .subscribe-title {
   font-family: var(--main-font);
@@ -21,4 +26,26 @@
 
 .social-list-link {
   background: rgba(255, 255, 255, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+  }
+
+  .subscribe-list {
+    display: flex;
+    align-items: center;
+  }
+  .subscribe-title {
+    font-family: var(--main-font);
+    @include font(14px, 700, 1.14);
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .subscribe-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }

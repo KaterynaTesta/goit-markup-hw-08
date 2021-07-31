@@ -6,19 +6,28 @@
   padding-bottom: 60px;
 }
 .footer-contact {
+  display: block;
+  text-align: center;
   list-style: none;
   margin-top: 20px;
-  margin-right: 70px;
-}
-.logo-footer {
-  font-family: var(--secondary-font);
-  @include font(26px, 700, 1.19);
-  color: #ffffff;
-  text-align: left;
 }
 
+.logo-footer {
+  display: block;
+  text-align: center;
+  font-family: var(--secondary-font);
+  @include font(24px, 400, 1.16);
+  color: #ffffff;
+}
+// .logo-footer {
+//   font-family: var(--secondary-font);
+//   @include font(26px, 700, 1.19);
+//   color: #ffffff;
+//   text-align: left;
+// }
+
 .footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contact-info-address {
@@ -55,5 +64,19 @@
   &:focus {
     fill: #ffffff;
     background-color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-contact {
+    margin-top: 20px;
+    margin-left: 70px;
+    text-align: left;
+  }
+  .footer-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .logo-footer {
+    margin-left: 115px;
+    text-align: left;
   }
 }

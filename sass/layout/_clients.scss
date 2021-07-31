@@ -47,12 +47,10 @@
   .client-desc {
     display: flex;
     flex-wrap: nowrap;
-    max-width: 1170px;
+    width: 170px;
+    // max-width: 1170px;
     align-items: center;
     // justify-content: space-between;
-    // width: calc((100% - 150px) / 6);
-  }
-  .client-link {
-    width: 170px;
+    width: calc((100% - 5 * 30px) / 6);
   }
 }
