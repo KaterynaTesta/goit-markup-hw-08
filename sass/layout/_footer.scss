@@ -1,10 +1,11 @@
 .footer {
   background-color: #2f303a;
-}
-.footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+// .footer-section {
+
+// }
 .footer-contact {
   display: block;
   text-align: center;
@@ -67,16 +68,10 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .footer-contact {
-    margin-top: 20px;
-    margin-left: 70px;
-    text-align: left;
-  }
-  .footer-item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-  .logo-footer {
-    margin-left: 115px;
-    text-align: left;
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }

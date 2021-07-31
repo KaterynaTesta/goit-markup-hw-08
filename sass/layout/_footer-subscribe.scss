@@ -5,6 +5,7 @@
   margin-left: 0 auto;
 }
 .subscribe {
+  display: block;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -33,7 +34,10 @@
     align-items: baseline;
     margin-left: auto;
   }
-
+  .subscribe {
+    margin-left: 165px;
+    margin-right: 69px;
+  }
   .subscribe-list {
     display: flex;
     align-items: center;
