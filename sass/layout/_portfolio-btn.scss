@@ -1,13 +1,23 @@
 .filter-btn {
   display: flex;
-  justify-content: center;
-  padding: 94px 0px;
-  padding-bottom: 34px;
+  // flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  // margin-right: -8px;
+  // margin-top: -15px;
+  padding-top: 60px;
+  // align-items: center;
+  //   justify-content: center;
+  //   padding: 94px 0px;
+  //   padding-bottom: 34px;
 }
 .btn-item:not(:last-child) {
   margin-right: 8px;
 }
 .menu-btn {
+  margin-right: 8px;
+  margin-top: 15px;
   font-family: var(--main-font);
   @include font(16px, 500, 1.62);
   text-align: center;
@@ -27,5 +37,21 @@
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
       0px 2px 2px rgb(0 0 0 / 12%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-btn {
+    display: flex;
+    margin-bottom: 14px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-btn {
+    align-items: center;
+    justify-content: center;
+    // padding: 34px 0px;
+    padding-bottom: 30px;
   }
 }
