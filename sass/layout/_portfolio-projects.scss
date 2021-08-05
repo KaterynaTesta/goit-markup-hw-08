@@ -4,16 +4,15 @@
 }
 
 .project-desc {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
+  //   display: block;
+  //   width: 100%;
+  //   margin: 0 auto;
   margin-bottom: 30px;
 }
 .project-link {
   // display: flex;
   // flex-direction: column;
   width: 100%;
-  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -52,7 +51,6 @@
   }
 }
 .project-profile {
-  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -74,21 +72,25 @@
 
 // ========TABLET
 @media screen and (min-width: 768px) {
-  .project-wrapper {
-    flex-grow: 1;
-  }
-  .project-link {
-    display: flex;
-    flex-direction: column;
-  }
-  .project-desc {
-    display: flex;
-    margin-left: 15px;
-    flex-basis: calc((100% - 60px) / 2);
-  }
   .project-item {
-    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .project-profile {
+    padding: 20px 24px 56px 24px;
+  }
+  .project-item.list {
+    align-items: unset;
+  }
+
+  .project-desc {
+    margin-bottom: 0;
+    margin-left: 30px;
     margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
   }
   .project-desc:last-child {
     margin-bottom: 60px;
@@ -102,7 +104,7 @@
   .project-border {
     margin-bottom: 79px;
   }
-  // .project-desc:last-child {
-  //   margin-bottom: 0;
-  // }
+  .project-desc:last-child {
+    margin-bottom: 0;
+  }
 }
