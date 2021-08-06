@@ -218,7 +218,7 @@ img {
 
 .modal {
   position: absolute;
-  max-width: 450px;
+  width: 450px;
   left: 50%;
   top: 50%;
   background: #ffffff;
@@ -457,7 +457,7 @@ img {
   width: 100%;
   height: 4px;
   left: 0;
-  bottom: -33px;
+  bottom: -32px;
   background: #2196f3;
   border-radius: 2px;
 }
@@ -656,7 +656,7 @@ img {
     width: 100%;
     height: 4px;
     left: 0;
-    bottom: -22px;
+    bottom: -32px;
     background: #2196f3;
     border-radius: 2px;
   }
@@ -678,7 +678,8 @@ img {
   .contact {
     display: block;
     margin-left: auto;
-    margin-bottom: 21px;
+    padding-bottom: 21px;
+    padding-top: 21px;
   }
 
   .contact__link {
@@ -696,7 +697,7 @@ img {
     color: var(--accent-color);
   }
 
-  .contact-header__mail {
+  .contact-header:not(:last-child) {
     margin-bottom: 10px;
   }
 
@@ -708,23 +709,18 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .header-container {
-    max-width: 1600px;
+    max-width: 1200px;
   }
 
   .contact {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    align-items: baseline;
     justify-content: center;
-    margin: 0 auto;
-  }
-
-  .contact__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-left: auto;
   }
 
   .nav__link.current::after {
-    bottom: -33px;
+    bottom: -27px;
   }
 
   .contact__link {
@@ -734,12 +730,8 @@ img {
     letter-spacing: 0.02em;
   }
 
-  .contact-header__mail {
-    margin-bottom: 0;
-  }
-
   .contact-header:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 52px;
   }
 
   .navigation {
@@ -770,7 +762,7 @@ img {
 .overlay {
   margin-right: auto;
   margin-left: auto;
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg);
   background-repeat: no-repeat;
@@ -787,7 +779,7 @@ img {
   .overlay {
     margin-right: auto;
     margin-left: auto;
-    width: 768px;
+    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
     background-repeat: no-repeat;
@@ -804,7 +796,7 @@ img {
   .overlay {
     margin-right: auto;
     margin-left: auto;
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desctop.jpg);
     background-repeat: no-repeat;
