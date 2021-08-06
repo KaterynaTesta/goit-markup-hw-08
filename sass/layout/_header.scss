@@ -1,6 +1,5 @@
 // =======MOBILE
 .header {
-  padding-top: 16px;
   border-bottom: 1px solid #ececec;
 }
 .header-list {
@@ -127,13 +126,16 @@
 }
 .mobile-nav-list-contact {
   display: block;
+
+  &__item {
+    margin-bottom: 32px;
+  }
 }
 .mobile-nav-list-contact__link {
   font-family: var(--main-font);
   @include font(34px, 500, 1.17, 00.02em);
 }
 .mobile-nav-list-contact__blue {
-  margin-bottom: 32px;
   color: var(--accent-color);
 }
 .mobile-nav-list-contact__grey {
@@ -245,29 +247,11 @@
   .contact-header__mail {
     margin-bottom: 10px;
   }
-
-  // .contact-header {
-  //   margin-right: 50px;
-  //   margin-left: auto;
-  // }
-
   .icon-envelope,
   .icon-smartphone {
     margin-right: 10px;
     fill: currentColor;
   }
-  //   display: flex;
-  //   align-items: center;
-  //   font-family: var(--main-font);
-  //   color: var(--text-color);
-  //   @include font(14px, 500, 1.2, 0.02em);
-  //   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  //   &:hover,
-  //   &:focus {
-  //     color: var(--accent-color);
-  //   }
-  // }
 }
 // ========DESCTOP
 @media screen and (min-width: 1200px) {
