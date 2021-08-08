@@ -279,8 +279,8 @@
 
   .contact {
     display: flex;
-    align-items: baseline;
-    justify-content: center;
+    // align-items: baseline;
+    // justify-content: center;
     margin-left: auto;
     padding: unset;
   }
@@ -291,8 +291,8 @@
 
   .contact-header {
     display: flex;
-    align-items: baseline;
-    justify-content: center;
+    // align-items: baseline;
+    // justify-content: center;
   }
   .contact-header:not(:last-child) {
     margin-right: 52px;

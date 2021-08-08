@@ -720,8 +720,6 @@ img {
 
   .contact {
     display: flex;
-    align-items: baseline;
-    justify-content: center;
     margin-left: auto;
     padding: unset;
   }
@@ -735,8 +733,6 @@ img {
 
   .contact-header {
     display: flex;
-    align-items: baseline;
-    justify-content: center;
   }
 
   .contact-header:not(:last-child) {
